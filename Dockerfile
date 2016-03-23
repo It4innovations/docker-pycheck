@@ -7,5 +7,6 @@ ENV LC_ALL en_US.UTF-8
 
 RUN apt-get -y update && apt-get install -y python-pip
 
-RUN pip install pylint\
-                autopep8
+RUN pip install pip 
+RUN pip install pylint
+RUN pip install autopep8
