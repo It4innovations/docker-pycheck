@@ -3,7 +3,7 @@ FROM ubuntu:xenial
 # Set the locale
 RUN apt-get clean \
  && apt-get update \
- && apt-get instal l\
+ && apt-get install \
  && locales \
  && locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8  
