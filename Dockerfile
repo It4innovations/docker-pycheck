@@ -6,7 +6,7 @@ ENV LANG en_US.utf8
 
 RUN apt-get clean && \
     apt-get update -y && \
-    apt-get install -y python-pip libcurl4-openssl-dev gcc libssl-dev curl gunicorn git
+    apt-get install -y python-pip libcurl4-openssl-dev gcc libssl-dev curl gunicorn git cutycapt imagemagick
 
 RUN pip install --upgrade pip setuptools
-RUN pip install pylint autopep8 pyresttest flask flask-jsonpify flask-sqlalchemy flask-restful
+RUN pip install pylint autopep8 pyresttest flask flask-jsonpify flask-sqlalchemy flask-restful yattag
