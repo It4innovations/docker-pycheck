@@ -2,6 +2,7 @@
 
 Latest Ubuntu with Python lint apps.
 
-* pylint
-* autopep8
 * ansible-lint
+* autopep8
+* pylint
+* yamllint
