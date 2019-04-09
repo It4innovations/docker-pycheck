@@ -10,4 +10,4 @@ RUN apt-get clean && \
     apt-get install -y python-pip git
 
 RUN pip install --upgrade pip setuptools
-RUN pip install pylint autopep8 ansible-lint
+RUN pip install ansible-lint autopep8 pylint yamllint
