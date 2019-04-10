@@ -1,6 +1,6 @@
 # docker-pycheck
 
-Latest Ubuntu with Python lint apps.
+Latest Ubuntu with Shellcheck and Python lint apps.
 
 * ansible-lint
 * autopep8

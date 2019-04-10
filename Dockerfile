@@ -7,7 +7,7 @@ ENV LANG en_US.utf8
 
 RUN apt-get clean && \
     apt-get update -y && \
-    apt-get install -y python-pip git
+    apt-get install -y python-pip git shellcheck
 
 RUN pip install --upgrade pip setuptools
 RUN pip install ansible-lint autopep8 pylint yamllint
