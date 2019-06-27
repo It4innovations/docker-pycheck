@@ -10,5 +10,5 @@ RUN apt-get clean && \
     apt-get install -y git pandoc python-pip virtualenv
 
 RUN pip install --upgrade pip setuptools
-RUN pip install ansible-lint autopep8 pylint yamllint
+RUN pip install ansible-lint autopep8 pycodestyle pylint yamllint
 RUN pip install setuptools-git-version setuptools-markdown
