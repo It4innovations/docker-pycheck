@@ -7,7 +7,7 @@ ENV LANG en_US.utf8
 
 RUN apt-get clean && \
     apt-get update -y && \
-    apt-get install -y git pandoc python-pip virtualenv
+    apt-get install -y git pandoc python-pip virtualenv python-pylibacl
 
 RUN pip install --upgrade pip setuptools
 RUN pip install ansible-lint autopep8 pycodestyle pylint yamllint
