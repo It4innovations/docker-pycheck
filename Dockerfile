@@ -11,4 +11,4 @@ RUN apt-get clean && \
 
 RUN pip install --upgrade pip setuptools
 RUN pip install ansible-lint autopep8 pycodestyle pylint yamllint
-RUN pip install setuptools-git-version setuptools-markdown
+RUN pip install safety setuptools-git-version setuptools-markdown
