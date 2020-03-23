@@ -6,4 +6,5 @@ Latest Ubuntu with Python lint apps.
 * autopep8
 * pycodestyle
 * pylint
+* safety
 * yamllint
