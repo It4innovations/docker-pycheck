@@ -10,6 +10,6 @@ RUN apt-get clean && \
     apt-get install -y git pandoc python-pip virtualenv python-pylibacl
 
 RUN pip install --upgrade pip setuptools
-RUN pip install ansible-lint autopep8 pycodestyle pylint yamllint
-RUN pip install safety setuptools-git-version setuptools-markdown
+RUN pip install ansible-lint autopep8 pycodestyle pylint yamllint \
+                safety setuptools-git-version setuptools-markdown
 RUN virtualenv /opt/.venv
