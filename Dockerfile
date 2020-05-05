@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM debian:latest
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get clean && apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
@@ -13,3 +13,8 @@ RUN pip install --upgrade pip setuptools
 RUN pip install ansible-lint autopep8 pycodestyle pylint yamllint \
                 safety setuptools-git-version setuptools-markdown
 RUN virtualenv /opt/.venv
+RUN virtualenv -p python3 /opt/.venv3
+
+RUN . /opt/.venv3/bin/activate && pip install --upgrade pip setuptools
+RUN . /opt/.venv3/bin/activate && pip install ansible-lint autopep8 pycodestyle pylint yamllint \
+                                              safety setuptools-git-version setuptools-markdown
