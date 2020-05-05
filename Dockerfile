@@ -7,14 +7,14 @@ ENV LANG en_US.utf8
 
 RUN apt-get clean && \
     apt-get update -y && \
-    apt-get install -y git pandoc python-pip virtualenv python-pylibacl
+    apt-get install -y git pandoc python-pip virtualenv python-pylibacl python-dev libssl-dev \
+                       libcurl4-openssl-dev
 
 RUN pip install --upgrade pip setuptools
 RUN pip install ansible-lint autopep8 pycodestyle pylint yamllint \
                 safety setuptools-git-version setuptools-markdown
 RUN virtualenv /opt/.venv
 RUN virtualenv -p python3 /opt/.venv3
-
 RUN . /opt/.venv3/bin/activate && pip install --upgrade pip setuptools
 RUN . /opt/.venv3/bin/activate && pip install ansible-lint autopep8 pycodestyle pylint yamllint \
                                               safety setuptools-git-version setuptools-markdown
