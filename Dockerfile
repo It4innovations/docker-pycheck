@@ -7,8 +7,8 @@ ENV LANG en_US.utf8
 
 RUN apt-get clean && \
     apt-get update -y && \
-    apt-get install -y git pandoc python-pip virtualenv python-pylibacl python-dev libssl-dev \
-                       libcurl4-openssl-dev
+    apt-get install -y git pandoc libssl-dev libcurl4-openssl-dev \
+                       python-pip virtualenv python3-virtualenv python-dev python3-dev python-pylibacl
 
 RUN pip install --upgrade pip setuptools
 RUN pip install ansible-lint autopep8 pycodestyle pylint yamllint \
